@@ -1,0 +1,34 @@
+{
+  "name": "angularjs-starter",
+  "version": "1.0.0",
+  "description": "AngularJS / TypeScript - Boilerplate Project",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eontool/angularjs-starter.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eontool/angularjs-starter/issues"
+  },
+  "homepage": "https://github.com/eontool/angularjs-starter#readme",
+  "dependencies": {
+    "angular": "^1.6.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.5.21",
+    "@types/jquery": "^2.0.34",
+    "browserify": "^13.1.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1",
+    "gulp-rename": "^1.2.2"
+  }
+}
