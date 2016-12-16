@@ -7,4 +7,9 @@ interface Window {
 
 declare namespace myApp {
 
+
+    interface DemoDirective extends angular.IScope{
+        name: string;
+    }
+
 }

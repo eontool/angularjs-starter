@@ -1,6 +1,7 @@
+
 export default class MainCtrl {
-    
-    static $inject = [
+
+    static $inject: string[] = [
         "$http"
     ];
 
@@ -9,6 +10,6 @@ export default class MainCtrl {
     ) {
     }
 
-    private myTitle:string = "Hello from MainCtrl";
+    private myTitle: string = "Hello from MainCtrl";
     
 }
