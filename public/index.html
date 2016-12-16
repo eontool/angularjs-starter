@@ -10,10 +10,16 @@
 <script src="js/vendor.min.js" charset="UTF-8"></script>
 <script src="js/app.min.js" charset="UTF-8"></script>
 
-<body ng-controller="MainCtrl as myController">
+<body>
     <h1>Welcome!</h1>
 
-    <h2 ng-bind="myController.myTitle"></h2>
+    <div ng-controller="MainCtrl as ctrl1">
+        <h2 ng-bind="ctrl1.myTitle"></h2>
+    </div>
+
+    <div ng-controller="MainCtrl as ctrl2">
+        <h2 ng-bind="ctrl2.myTitle"></h2>
+    </div>
 
 </body>
 

@@ -10,5 +10,5 @@ export default class MainCtrl {
     }
 
     private myTitle:string = "Hello from MainCtrl";
-
+    
 }
