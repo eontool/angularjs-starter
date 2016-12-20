@@ -1,0 +1,1 @@
+(function(){angular.module('Templates', []).run(['$templateCache', function($templateCache) {$templateCache.put('auth/index.html','<h1>Login Page!</h1>\n\n\n<div ng-controller="MainCtrl as MainCtrl">\n\n    <div class="loading"></div>\n\n</div>');}]);})();

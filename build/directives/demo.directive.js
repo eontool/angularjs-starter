@@ -1,16 +1,21 @@
 "use strict";
-var DemoDirective = (function () {
-    function DemoDirective() {
-        this.restrict = 'E';
-        this.template = "<h1>Hello!</h1>";
+class DemoDirective {
+    constructor($compile) {
+        this.$compile = $compile;
+        this.restrict = 'A';
     }
-    DemoDirective.instance = function () {
-        return new DemoDirective;
-    };
-    DemoDirective.prototype.link = function (scope, elements, attrs) {
+    link(scope, elements, attrs) {
+        console.log(scope);
+        console.log(elements);
         console.log(attrs);
-    };
-    return DemoDirective;
-}());
+        let html = '<h1>' + '1' + '</h1>';
+        elements.append(this.$compile(html)(scope));
+    }
+    static instance() {
+        let directive = ($compile) => new DemoDirective($compile);
+        directive.$inject = ['$compile'];
+        return directive;
+    }
+}
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = DemoDirective;

@@ -1,17 +1,16 @@
 "use strict";
-var MainService = (function () {
-    function MainService($http) {
+class MainService {
+    constructor($http) {
         this.$http = $http;
     }
     /**
      * mainMethod
      */
-    MainService.prototype.mainMethod = function () {
-    };
-    MainService.$inject = [
-        '$http'
-    ];
-    return MainService;
-}());
+    mainMethod() {
+    }
+}
+MainService.$inject = [
+    '$http'
+];
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = MainService;

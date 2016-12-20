@@ -2,7 +2,7 @@
 export default class MainCtrl {
 
     static $inject: string[] = [
-        "$http"
+        "$http",
     ];
 
     constructor(
@@ -11,5 +11,5 @@ export default class MainCtrl {
     }
 
     private myTitle: string = "Hello from MainCtrl";
-    
+
 }
